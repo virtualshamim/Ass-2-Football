@@ -1,0 +1,305 @@
+/* main css */
+/* css cariable start */
+:root {
+  --button-color: #e02c6d;
+  --heading-color: #18191f;
+}
+/* css cariable end */
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.container {
+  width: 1170px;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* header are css start */
+header {
+  background-color: #2d25a0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login a:hover .fas{
+  transform: translateX(10px);
+}
+.login a .fas {
+  transition: 0.5s ease-in;
+}
+.mobile-menu {
+  display: none;
+}
+.header-area {
+  width: 1170px;
+  padding-top: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list li a {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.menu-list li {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-list {
+  display: flex;
+  gap: 36px;
+  padding: 0;
+}
+
+.login a {
+  color: #fff;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: #e02c6d;
+  width: 123px;
+  max-height: 44px;
+}
+/* header are css end */
+
+/* slider area start */
+#home-slide {
+  position: relative;
+  width: 100%;
+  background-color: #2d25a0;
+  padding-top: 67px;
+}
+
+.slider {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 86px;
+}
+
+.slider-text h1 {
+  font-size: 64px;
+  line-height: 80px;
+  color: #fff;
+}
+/* clubs area start */
+#club {
+  margin: 50px;
+  position: relative;
+}
+
+.clubs-area {
+  padding: 70px 0 165px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 45px;
+  grid-row-gap: 27px;
+}
+
+.single-club {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+.player-info h1 {
+  color: #18191f;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.player-thumb img {
+  width: 100%;
+}
+/* clubs area end */
+/* news area start */
+.news-area {
+  display: flex;
+  gap: 66px;
+}
+.news-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.news-info h2 {
+  font-size: 48px;
+  line-height: 60px;
+  color: #0a0826;
+  margin-bottom: 0;
+}
+/* news area end */
+/* footer area start */
+#footer {
+  padding: 158px 0 63px;
+}
+.copy-info p {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.social-bar .fab {
+  font-size: 17px;
+  background: #e7e7e8;
+  padding: 10px 8px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+.top-footer-info {
+  padding-bottom: 29px;
+}
+.bottom-footer-info {
+  text-align: center;
+}
+.bottom-footer-info {
+  color: #000;
+}
+.footer-area {
+  text-align: center;
+}
+.copy-info {
+  padding-top: 20px;
+}
+
+/* footer area end */
+
+/* media query for device  */
+@media (max-width: 668px) {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .container {
+    width: 90%;
+  }
+  .clubs-area {
+    grid-template-columns: 1fr;
+    gap: 24px 20px;
+  }
+  .news-area {
+    flex-direction: column;
+    gap: 66px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu .fas {
+    font-size: 24px;
+    color: #fff;
+  }
+  .slider-text {
+    padding-bottom: 50px;
+  }
+  header {
+    margin-top: -2px;
+  }
+
+  .header-area {
+    align-items: center;
+  }
+  .slider {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .slider-text h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  #footer {
+    padding: 54px 0;
+  }
+  .clubs-area {
+    padding: 70px 0 60px;
+  }
+  .news-info h2 br {
+    display: none;
+  }
+  .news-info h2 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .mobile {
+    width: 100px !important;
+  }
+}
+
+/* media query for tabet  */
+@media (min-width: 668px) and (max-width: 992px) {
+  header {
+    margin-top: -2px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu .fas {
+    font-size: 24px;
+    color: #fff;
+  }
+  .mobile {
+    width: 100px !important;
+  }
+  .news-area {
+    flex-direction: column;
+    gap: 66px;
+  }
+  .clubs-area {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 70px 0 60px;
+  }
+  .player-info h1 {
+    font-size: 27px;
+    line-height: 40px;
+  }
+  br {
+    display: none;
+  }
+
+  .slider-text h1 {
+    font-size: 46px;
+    line-height: 56px;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* scroll bar css */
+::-webkit-scrollbar{
+  width:15px;
+  height: 5px;
+
+}
+::-webkit-scrollbar-track{
+  background:#2D25A0;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb{
+  background: #e02c6d;
+  border-radius: 10px;
+
+}
