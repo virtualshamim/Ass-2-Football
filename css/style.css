@@ -19,7 +19,9 @@ body {
   max-width: 80%;
   margin: auto;
 }
-
+.position-center{
+  text-align: center;
+}
 /* header are css start */
 header {
   background-color: #2d25a0;
@@ -144,6 +146,27 @@ header {
   margin-bottom: 0;
 }
 /* news area end */
+/* Sponsors start*/
+#sponsors{
+  padding: 70px 0px;
+}
+.sponsors-main{
+  display: grid;
+    padding: 70px 0 165px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 50px;
+}
+.section-title{
+  font-size: 48px;
+  line-height: 60px;
+  color: #0a0826;
+  margin-bottom: 0;
+  text-align: center;
+}
+.sponsors-list{
+  text-align:center;
+}
 /* footer area start */
 #footer {
   padding: 158px 0 63px;
@@ -157,7 +180,7 @@ header {
 .social-bar .fab {
   font-size: 17px;
   background: #e7e7e8;
-  padding: 10px 8px;
+  padding: 10px 10px;
   border-radius: 50%;
   margin-right: 14px;
 }
@@ -288,18 +311,3 @@ header {
   }
 }
 
-/* scroll bar css */
-::-webkit-scrollbar{
-  width:15px;
-  height: 5px;
-
-}
-::-webkit-scrollbar-track{
-  background:#2D25A0;
-  border-radius: 0px;
-}
-::-webkit-scrollbar-thumb{
-  background: #e02c6d;
-  border-radius: 10px;
-
-}
